@@ -4,7 +4,8 @@ import re
 import random as rnd
 
 # 1a
-file = open('./speeches.txt','r')
+# file = open('./speeches.txt','r')
+file = open('./text.txt','r')
 text = file.read()
 # reading the file
 text = text.lower()
@@ -30,10 +31,10 @@ for word in words:
 freqList = [words.count(word) for word in uniqueWordList]
 wordFreqObject = {
   'Words':uniqueWordList,
-  'Frequency': freqList
+  'Frequency':freqList
 }
 wordFreqTable = pd.DataFrame(wordFreqObject)
-# print(wordFreqTable)
+print(wordFreqTable)
 
 
 # wordFreqSeries = pd.Series(wordFreqObject['Frequency'],index=wordFreqObject['Words'])
@@ -61,12 +62,18 @@ def freq_j_after_i(i,j):
 
 # print(freq_j_after_i(45,123))
 
-nnmatrix = [[freq_j_after_i(i,j) for j in range(numUniqueWords)] for i in range(numUniqueWords)]
+nnmatrix = [
+  [freq_j_after_i(i,j) for j in range(numUniqueWords)] for i in range(numUniqueWords)
+]
+
+for i in range(numUniqueWords):
+  wordFreqObject[uniqueWordList[i]] = [row[i] for row in nnmatrix]
+
 # print(nnmatrix)
 
 
 def findrow():
-  word = str(input('Enter a word '))
+  word = str(input('Enter a word: '))
   try:
     index = uniqueWordList.index(word)
     return nnmatrix[index]
@@ -75,20 +82,31 @@ def findrow():
     print(e)
 
 
-freqList = findrow()
-print(freqList)
+# freqList = findrow()
+# print(freqList)
 
 
 # 1c
 randomIndex = rnd.randint(0,numUniqueWords-1)
 randomWord = uniqueWordList[randomIndex]
 
+# textLength = 0
+# i = rnd.randint(0,numUniqueWords - 1)
+# word = uniqueWordList[i]
+# print(word,end=' ')
+# textLength += 1
 
 
-
-
-
-
+# while textLength < 5000:
+#   # i = rnd.randint(0,numUniqueWords - 1)
+#   # word = uniqueWordList[i]
+#   # print(word,end=' ')
+#   # row = nnmatrix[i]
+#   row = nnmatrix[i]
+#   word = rnd.choices(uniqueWordList,weights=row,k=1)[0]
+#   i = uniqueWordList.index(word)
+#   print(word, end=' ')
+#   textLength += 1
 
 
 
