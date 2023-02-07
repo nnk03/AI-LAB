@@ -54,10 +54,41 @@ class Player:
     print(f'probability of scoring runs: {self.pRun}')
     print(f'The number of balls played by this player is {self.balls_played_by_thisPlayer}')
 
+  def player_playBall(self,a_t=0):
+    a_t = int(input()) if a_t == 0 else a_t
+    if a_t == 5:
+      print('no such run')
+      return
+    self.balls_played_by_thisPlayer+=1
+    # increment the number of balls played
+    indexOfShot = self.shots.index(a_t)
+    pOut_shot = self.pOutList[indexOfShot]
+    # prob that the attempt to shoot a_t results in a wicket
+    isOut = rnd.choices(
+      [True,False],
+      weights=[pOut_shot,1-pOut_shot],
+      k=1
+    )[0]
+    if isOut:
+      self.isOut = True
+    else:
+      pRun = self.pRun
+      doesScore = rnd.choices(
+        [True,False],
+        weights=[pRun,1-pRun],
+        k=1
+      )[0]
+      if doesScore:
+        self.runs += a_t
+
+
+
+
+
 
 class ODI:
   
-  def __init__(self) -> None:
+  def __init__(self,player:Player = None) -> None:
     self.ballsPlayed = 0
     self.ballsLeft = 300
     self.totalRuns = 0
@@ -86,7 +117,7 @@ class ODI:
   def ballPlayed(self,whoPlayedTheBall: Player,runs_scored = 0,is_wicket = False):
     # whoPlayedTheBall is a player object
     if self.ballsPlayed == 300:
-      odi.isActive = False
+      self.isActive = False
       return
     
     self.ballsPlayed += 1
@@ -99,7 +130,7 @@ class ODI:
       self.wicketsInHand -= 1
       # what if current player index crosses 10
       if self.currentPlayerIndex == 10:
-        odi.isActive = False
+        self.isActive = False
         return
       self.currentPlayerIndex += 1
       self.currentPlayerObject = self.players[self.currentPlayerIndex - 1]
@@ -149,21 +180,127 @@ def playBall(odi: ODI,a_t = 0) -> tuple:
       odi.ballPlayed(playerObject,runs_scored=runsScored)
       return (runsScored,odi.currentState)
 
-odi = ODI()
+# odi = ODI()
 # odi.print_state_of_odi()
 # playBall(odi)
 # odi.print_state_of_odi()
 
-i = 0
-odi.print_state_of_odi()
-while i<300 and odi.isActive:
-  playBall(
-    odi,
-    a_t=rnd.choices([1,2,3,4,6],k=1)[0]
-  )
-  print(odi.currentState, odi.totalRuns)
-  i+=1
-  
+# i = 0
+# odi.print_state_of_odi()
+# while i<300 and odi.isActive:
+#   playBall(
+#     odi,
+#     a_t=rnd.choices([1,2,3,4,6],k=1)[0]
+#   )
+#   print(odi.currentState, odi.totalRuns)
+#   i+=1
+# 
+
+
+# 3b
+print('question 3b')
+
+numMatches_played_by_player = 0
+runs_scored = 0
+numBalls_played = 0
+# take 100 matches played by the player
+while numMatches_played_by_player < 100:
+  player1 = Player(1)
+  numBalls = 0
+  while numBalls < 300 and player1.isOut == False:
+    player1.player_playBall(1)
+    numBalls += 1
+  runs_scored += player1.runs
+  numBalls_played += player1.balls_played_by_thisPlayer
+  numMatches_played_by_player += 1
+print(f'the average balls played by the player {player1.player_tuple} is {numBalls_played/numMatches_played_by_player}')
+print(
+  f'the average runs scored by player {player1.player_tuple} is {runs_scored/numMatches_played_by_player}'
+)
+
+
+numMatches_played_by_player = 0
+runs_scored = 0
+numBalls_played = 0
+# take 100 matches played by the player
+while numMatches_played_by_player < 100:
+  player10 = Player(10)
+  numBalls = 0
+  while numBalls < 300 and player10.isOut == False:
+    player10.player_playBall(1)
+    numBalls += 1
+  runs_scored += player10.runs
+  numBalls_played += player10.balls_played_by_thisPlayer
+  numMatches_played_by_player += 1
+print(f'the average balls played by the player {player10.player_tuple} is {numBalls_played/numMatches_played_by_player}')
+print(
+  f'the average runs scored by player {player10.player_tuple} is {runs_scored/numMatches_played_by_player}'
+)
+
+
+
+
+# 3c
+print('question 3c')
+
+numMatches_played_by_player = 0
+runs_scored = 0
+numBalls_played = 0
+# take 100 matches played by the player
+while numMatches_played_by_player < 100:
+  player1 = Player(1)
+  numBalls = 0
+  while numBalls < 300 and player1.isOut == False:
+    player1.player_playBall(6)
+    numBalls += 1
+  runs_scored += player1.runs
+  numBalls_played += player1.balls_played_by_thisPlayer
+  numMatches_played_by_player += 1
+print(f'the average balls played by the player {player1.player_tuple} is {numBalls_played/numMatches_played_by_player}')
+print(
+  f'the average runs scored by player {player1.player_tuple} is {runs_scored/numMatches_played_by_player}'
+)
+
+numMatches_played_by_player = 0
+runs_scored = 0
+numBalls_played = 0
+# take 100 matches played by the player
+while numMatches_played_by_player < 100:
+  player10 = Player(10)
+  numBalls = 0
+  while numBalls < 300 and player10.isOut == False:
+    player10.player_playBall(6)
+    numBalls += 1
+  runs_scored += player10.runs
+  numBalls_played += player10.balls_played_by_thisPlayer
+  numMatches_played_by_player += 1
+print(f'the average balls played by the player {player10.player_tuple} is {numBalls_played/numMatches_played_by_player}')
+print(
+  f'the average runs scored by player {player10.player_tuple} is {runs_scored/numMatches_played_by_player}'
+)
+
+
+# 3d
+
+print('question 3d')
+actionList  = [1,2,3,4,6]
+for action in actionList:
+  numMatches = 0
+  runs = 0
+  while numMatches < 10:
+    odi_new = ODI()
+    numBalls = 0
+    while numBalls < 300 and odi_new.isActive:
+      playBall(odi_new,action)
+    runs += odi_new.totalRuns
+    numMatches += 1
+
+  print(f'average runs obtained in the strategy where at = {action} is {runs/10}')
+
+
+
+
+
 
 
 
