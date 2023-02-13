@@ -191,8 +191,9 @@ while count < 10:
   agent.doAction_modifyReward()
   count += 1
 
-count = 0
-while count < 10:
-  roomFloor.print_state_of_floor()
-  roomFloor.addDirt()
-  count += 1
+# count = 0
+# while count < 10:
+#   roomFloor.print_state_of_floor()
+#   agent.print_state_of_agent()
+#   roomFloor.addDirt()
+#   count += 1
