@@ -7,7 +7,8 @@ import random as rnd
 
 # file = open('./speeches.txt','r')
 # file = open('./text.txt','r')
-file = open('./text2.txt','r')
+# file = open('./text2.txt','r')
+file = open('./text3.txt','r')
 
 # 1a
 text = file.read()
@@ -87,7 +88,9 @@ def findFreqList():
   else:
     index = uniqueWordList.index(word)
     return nnmatrix[index]
-
+for row in nnmatrix:
+  print(row)
+print()
 
 row = findFreqList()
 print(row)
