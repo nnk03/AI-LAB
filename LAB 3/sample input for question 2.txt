@@ -1,0 +1,354 @@
+Last login: Thu Mar  2 23:19:20 on ttys002
+co%                                                                             neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % code .
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py 
+1
+2
+3
+0
+5
+4
+7
+6
+8
+
+1 2 3 
+0 5 4 
+7 6 8 
+
+Solution found
+
+1 2 3 
+0 5 4 
+7 6 8 
+
+
+1 2 3 
+7 5 4 
+0 6 8 
+
+
+1 2 3 
+7 5 4 
+6 0 8 
+
+
+1 2 3 
+7 0 4 
+6 5 8 
+
+
+1 2 3 
+7 4 0 
+6 5 8 
+
+
+1 2 3 
+7 4 8 
+6 5 0 
+
+
+1 2 3 
+7 4 8 
+6 0 5 
+
+
+1 2 3 
+7 4 8 
+0 6 5 
+
+
+1 2 3 
+0 4 8 
+7 6 5 
+
+
+1 2 3 
+4 0 8 
+7 6 5 
+
+
+1 2 3 
+4 8 0 
+7 6 5 
+
+
+1 2 3 
+4 8 5 
+7 6 0 
+
+
+1 2 3 
+4 8 5 
+7 0 6 
+
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 149195 states
+Solution found
+
+1 2 3 
+0 5 4 
+7 6 8 
+
+
+1 2 3 
+7 5 4 
+0 6 8 
+
+
+1 2 3 
+7 5 4 
+6 0 8 
+
+
+1 2 3 
+7 0 4 
+6 5 8 
+
+
+1 2 3 
+7 4 0 
+6 5 8 
+
+
+1 2 3 
+7 4 8 
+6 5 0 
+
+
+1 2 3 
+7 4 8 
+6 0 5 
+
+
+1 2 3 
+7 4 8 
+0 6 5 
+
+
+1 2 3 
+0 4 8 
+7 6 5 
+
+
+1 2 3 
+4 0 8 
+7 6 5 
+
+
+1 2 3 
+4 6 8 
+7 0 5 
+
+
+1 2 3 
+4 6 8 
+7 5 0 
+
+
+1 2 3 
+4 6 0 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total number of misplaced tiles as heuristic explored 106893 states
+Solution found
+
+1 2 3 
+0 5 4 
+7 6 8 
+
+
+1 2 3 
+7 5 4 
+0 6 8 
+
+
+1 2 3 
+7 5 4 
+6 0 8 
+
+
+1 2 3 
+7 0 4 
+6 5 8 
+
+
+1 2 3 
+7 4 0 
+6 5 8 
+
+
+1 2 3 
+7 4 8 
+6 5 0 
+
+
+1 2 3 
+7 4 8 
+6 0 5 
+
+
+1 2 3 
+7 4 8 
+0 6 5 
+
+
+1 2 3 
+0 4 8 
+7 6 5 
+
+
+1 2 3 
+4 0 8 
+7 6 5 
+
+
+1 2 3 
+4 6 8 
+7 0 5 
+
+
+1 2 3 
+4 6 8 
+7 5 0 
+
+
+1 2 3 
+4 6 0 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+astar search using manhattan distance of zero as heuristic explored 2077579 states
+2077579
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 590, in <module>
+    puzzle_new = Sliding_Block_Grid()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 127, in __init__
+    self.grid = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py 
+1
+2
+3
+4
+5
+6
+0
+7
+8
+
+1 2 3 
+4 5 6 
+0 7 8 
+
+Solution found
+
+1 2 3 
+4 5 6 
+0 7 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 3 states
+Solution found
+
+1 2 3 
+4 5 6 
+0 7 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total number of misplaced tiles as heuristic explored 3 states
+Solution found
+
+1 2 3 
+4 5 6 
+0 7 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+astar search using manhattan distance of zero as heuristic explored 3 states
+3
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 590, in <module>
+    puzzle_new = Sliding_Block_Grid()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 127, in __init__
+    self.grid = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 

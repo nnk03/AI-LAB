@@ -103,7 +103,7 @@ class Grid_State:
 
 
 class Sliding_Block_Grid:
-  def __init__(self, m=3) -> None:
+  def __init__(self, m=3,input_puzzle = True,depth = 20) -> None:
     self.sides =m
     self.rows = m
     self.columns = m
@@ -123,12 +123,13 @@ class Sliding_Block_Grid:
     #       self.pos_zero = [i,j]
         
     #     number += 1
-
-    # self.grid = [
-    #   list([int(input()) for _ in range(m)]) for _ in range(m)
-    # ]
-
-    self.create_solvable_puzzle()
+    self.depth = depth
+    if input_puzzle:
+      self.grid = [
+        list([int(input()) for _ in range(m)]) for _ in range(m)
+      ]
+    elif input_puzzle == False:
+      self.create_solvable_puzzle()
 
     self.current_grid_state = Grid_State(self.grid)
     # list of states
@@ -151,7 +152,7 @@ class Sliding_Block_Grid:
     
     # depth = rnd.randrange(10,20)
     # depth = int(input())
-    depth = 20
+    depth = self.depth
     i = m-1
     j = m-1
     # continue from here
@@ -587,10 +588,10 @@ print(agent.astar_explore_count_manhattan_distance_of_zero)
 # to compute efficiency
 explored_astar = 0
 for _ in range(100):
-  puzzle_new = Sliding_Block_Grid()
+  puzzle_new = Sliding_Block_Grid(input_puzzle=False)
   agent_new = Agent(puzzle_new)
-  agent.astar_search_using_manhattan(False)
-  explored_astar += agent.astar_explore_count_manhattan_distance
+  agent_new.astar_search_using_manhattan(False)
+  explored_astar += agent_new.astar_explore_count_manhattan_distance
   del agent_new
   del puzzle_new
 print(f'the average number of vertices explored is {explored_astar/100}')
@@ -598,10 +599,10 @@ print(f'the average number of vertices explored is {explored_astar/100}')
 
 explored = 0
 for _ in range(100):
-  puzzle_new = Sliding_Block_Grid()
+  puzzle_new = Sliding_Block_Grid(input_puzzle=False)
   agent_new = Agent(puzzle_new)
-  agent.astar_search_using_number_of_misplaced_blocks(False)
-  explored += agent.astar_explore_count_number_of_misplaced_blocks
+  agent_new.astar_search_using_number_of_misplaced_blocks(False)
+  explored += agent_new.astar_explore_count_number_of_misplaced_blocks
   del agent_new
   del puzzle_new
 print(f'the average number of vertices explored is {explored/100}')
@@ -610,10 +611,10 @@ print(f'the average number of vertices explored is {explored/100}')
 
 explored = 0
 for _ in range(100):
-  puzzle_new = Sliding_Block_Grid()
+  puzzle_new = Sliding_Block_Grid(input_puzzle=False)
   agent_new = Agent(puzzle_new)
-  agent.astar_search_using_manhattan_distance_of_zero(False)
-  explored += agent.astar_explore_count_manhattan_distance_of_zero
+  agent_new.astar_search_using_manhattan_distance_of_zero(False)
+  explored += agent_new.astar_explore_count_manhattan_distance_of_zero
   del agent_new
   del puzzle_new
 print(f'the average number of vertices explored is {explored/100}')
