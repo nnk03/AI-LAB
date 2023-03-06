@@ -49,6 +49,8 @@ class Grid_State:
       for j in range(m):
         number_in_i_j = grid[i][j]
         actual_pos_of_number = number_to_index_dictionary[number_in_i_j]
+
+        
         manhattan_distance_heuristic += absolute_value(i-actual_pos_of_number[0]) + absolute_value(j - actual_pos_of_number[1])
 
 
@@ -92,7 +94,9 @@ class Grid_State:
       for j in range(m):
         if grid[i][j] == 0:
           x = i
-          y = i
+          # y = i
+          # y should be assigned to j
+          y = j
           # since m-1 will always be greater than or equal to x and y
           return (m-1)-x + (m-1) - y
 

@@ -103,7 +103,7 @@ class Grid_State:
       for j in range(m):
         if grid[i][j] == 0:
           x = i
-          y = i
+          y = j
           # since m-1 will always be greater than or equal to x and y
           return (m-1)-x + (m-1) - y
 
@@ -645,3 +645,7 @@ print(f'the average number of vertices explored is {explored_astar/100}')
 #   del agent_new
 #   del puzzle_new
 # print(f'the average number of vertices explored is {explored/100}')
+
+
+puz2 = Sliding_Block_Grid(depth=16,input_puzzle=False)
+puz2.print_current_state_of_grid()
