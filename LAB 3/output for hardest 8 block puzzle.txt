@@ -1,0 +1,1778 @@
+Last login: Mon Mar  6 07:24:53 on ttys002
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % code .
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2new.py 
+1
+7
+2
+4
+6
+3
+5
+0
+8
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+Solution found
+Traceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 593, in <module>
+    agent.astar_search_using_manhattan()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 470, in astar_search_using_manhattan
+    self.print_solution(child_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 573, in print_solution
+    if state_of_grid == None:
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 101, in __eq__
+    list2 = other.grid
+AttributeError: 'NoneType' object has no attribute 'grid'
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2new.py
+1
+7
+2
+4
+6
+3
+5
+0
+8
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+Solution found
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+
+1 7 2 
+4 0 3 
+5 6 8 
+
+
+1 0 2 
+4 7 3 
+5 6 8 
+
+
+0 1 2 
+4 7 3 
+5 6 8 
+
+
+4 1 2 
+0 7 3 
+5 6 8 
+
+
+4 1 2 
+7 0 3 
+5 6 8 
+
+
+4 1 2 
+7 6 3 
+5 0 8 
+
+
+4 1 2 
+7 6 3 
+0 5 8 
+
+
+4 1 2 
+0 6 3 
+7 5 8 
+
+
+0 1 2 
+4 6 3 
+7 5 8 
+
+
+1 0 2 
+4 6 3 
+7 5 8 
+
+
+1 2 0 
+4 6 3 
+7 5 8 
+
+
+1 2 3 
+4 6 0 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 17860 states
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2new.py
+1
+7
+2
+4
+6
+3
+5
+0
+8
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+Solution found
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+
+1 7 2 
+4 0 3 
+5 6 8 
+
+
+1 0 2 
+4 7 3 
+5 6 8 
+
+
+0 1 2 
+4 7 3 
+5 6 8 
+
+
+4 1 2 
+0 7 3 
+5 6 8 
+
+
+4 1 2 
+7 0 3 
+5 6 8 
+
+
+4 1 2 
+7 6 3 
+5 0 8 
+
+
+4 1 2 
+7 6 3 
+0 5 8 
+
+
+4 1 2 
+0 6 3 
+7 5 8 
+
+
+0 1 2 
+4 6 3 
+7 5 8 
+
+
+1 0 2 
+4 6 3 
+7 5 8 
+
+
+1 2 0 
+4 6 3 
+7 5 8 
+
+
+1 2 3 
+4 6 0 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 17860 states
+the average number of vertices explored is 52.64
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py 
+1
+7
+2
+4
+6
+3
+5
+0
+8
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+Solution found
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+
+1 7 2 
+4 0 3 
+5 6 8 
+
+
+1 0 2 
+4 7 3 
+5 6 8 
+
+
+0 1 2 
+4 7 3 
+5 6 8 
+
+
+4 1 2 
+0 7 3 
+5 6 8 
+
+
+4 1 2 
+7 0 3 
+5 6 8 
+
+
+4 1 2 
+7 6 3 
+5 0 8 
+
+
+4 1 2 
+7 6 3 
+0 5 8 
+
+
+4 1 2 
+0 6 3 
+7 5 8 
+
+
+0 1 2 
+4 6 3 
+7 5 8 
+
+
+1 0 2 
+4 6 3 
+7 5 8 
+
+
+1 2 0 
+4 6 3 
+7 5 8 
+
+
+1 2 3 
+4 6 0 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 18890 states
+Solution found
+
+1 7 2 
+4 6 3 
+5 0 8 
+
+
+1 7 2 
+4 0 3 
+5 6 8 
+
+
+1 0 2 
+4 7 3 
+5 6 8 
+
+
+0 1 2 
+4 7 3 
+5 6 8 
+
+
+4 1 2 
+0 7 3 
+5 6 8 
+
+
+4 1 2 
+7 0 3 
+5 6 8 
+
+
+4 1 2 
+7 6 3 
+5 0 8 
+
+
+4 1 2 
+7 6 3 
+0 5 8 
+
+
+4 1 2 
+0 6 3 
+7 5 8 
+
+
+0 1 2 
+4 6 3 
+7 5 8 
+
+
+1 0 2 
+4 6 3 
+7 5 8 
+
+
+1 2 0 
+4 6 3 
+7 5 8 
+
+
+1 2 3 
+4 6 0 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total number of misplaced tiles as heuristic explored 68022 states
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 582, in <module>
+    agent.astar_search_using_manhattan_distance_of_zero()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 526, in astar_search_using_manhattan_distance_of_zero
+    children_states = self.child_generator_from_state(u_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 389, in child_generator_from_state
+    children_states = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 390, in <listcomp>
+    Grid_State(child_list) for child_list in children_list
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 38, in __init__
+    number_to_index_dictionary = dict()
+KeyboardInterrupt
+^C
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py
+1
+2
+3
+7
+8
+5
+0
+6
+4
+
+1 2 3 
+7 8 5 
+0 6 4 
+
+Solution found
+
+1 2 3 
+7 8 5 
+0 6 4 
+
+
+1 2 3 
+7 8 5 
+6 0 4 
+
+
+1 2 3 
+7 8 5 
+6 4 0 
+
+
+1 2 3 
+7 8 0 
+6 4 5 
+
+
+1 2 3 
+7 0 8 
+6 4 5 
+
+
+1 2 3 
+7 4 8 
+6 0 5 
+
+
+1 2 3 
+7 4 8 
+0 6 5 
+
+
+1 2 3 
+0 4 8 
+7 6 5 
+
+
+1 2 3 
+4 0 8 
+7 6 5 
+
+
+1 2 3 
+4 8 0 
+7 6 5 
+
+
+1 2 3 
+4 8 5 
+7 6 0 
+
+
+1 2 3 
+4 8 5 
+7 0 6 
+
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 6165 states
+Solution found
+
+1 2 3 
+7 8 5 
+0 6 4 
+
+
+1 2 3 
+7 8 5 
+6 0 4 
+
+
+1 2 3 
+7 8 5 
+6 4 0 
+
+
+1 2 3 
+7 8 0 
+6 4 5 
+
+
+1 2 3 
+7 0 8 
+6 4 5 
+
+
+1 2 3 
+7 4 8 
+6 0 5 
+
+
+1 2 3 
+7 4 8 
+0 6 5 
+
+
+1 2 3 
+0 4 8 
+7 6 5 
+
+
+1 2 3 
+4 0 8 
+7 6 5 
+
+
+1 2 3 
+4 8 0 
+7 6 5 
+
+
+1 2 3 
+4 8 5 
+7 6 0 
+
+
+1 2 3 
+4 8 5 
+7 0 6 
+
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total number of misplaced tiles as heuristic explored 24077 states
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 582, in <module>
+    agent.astar_search_using_manhattan_distance_of_zero()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 526, in astar_search_using_manhattan_distance_of_zero
+    children_states = self.child_generator_from_state(u_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 393, in child_generator_from_state
+    self.do_action_from_state(children_states[i],possible_actions[i])
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 397, in do_action_from_state
+    pos_agent = self.find_pos_zero(grid_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 364, in find_pos_zero
+    if grid[i][j] == 0:
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2new.py 
+1
+2
+3
+7
+8
+5
+0
+6
+4
+
+1 2 3 
+7 8 5 
+0 6 4 
+
+Solution found
+
+1 2 3 
+7 8 5 
+0 6 4 
+
+
+1 2 3 
+7 8 5 
+6 0 4 
+
+
+1 2 3 
+7 8 5 
+6 4 0 
+
+
+1 2 3 
+7 8 0 
+6 4 5 
+
+
+1 2 3 
+7 0 8 
+6 4 5 
+
+
+1 2 3 
+7 4 8 
+6 0 5 
+
+
+1 2 3 
+7 4 8 
+0 6 5 
+
+
+1 2 3 
+0 4 8 
+7 6 5 
+
+
+1 2 3 
+4 0 8 
+7 6 5 
+
+
+1 2 3 
+4 8 0 
+7 6 5 
+
+
+1 2 3 
+4 8 5 
+7 6 0 
+
+
+1 2 3 
+4 8 5 
+7 0 6 
+
+
+1 2 3 
+4 0 5 
+7 8 6 
+
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 6180 states
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 620, in <module>
+    agent_new.astar_search_using_manhattan(False)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 466, in astar_search_using_manhattan
+    children_states = self.child_generator_from_state(u_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 404, in child_generator_from_state
+    children_states = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 405, in <listcomp>
+    Grid_State(child_list) for child_list in children_list
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2new.py", line 71, in __init__
+    self.manhattan_distance_heuristic_of_zero = self.compute_manhattan_distance_of_zero()
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py 
+6
+1
+4
+3
+8
+5
+2
+7
+0
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+Solution found
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+
+6 1 4 
+3 8 0 
+2 7 5 
+
+
+6 1 4 
+3 0 8 
+2 7 5 
+
+
+6 1 4 
+0 3 8 
+2 7 5 
+
+
+6 1 4 
+2 3 8 
+0 7 5 
+
+
+6 1 4 
+2 3 8 
+7 0 5 
+
+
+6 1 4 
+2 3 8 
+7 5 0 
+
+
+6 1 4 
+2 3 0 
+7 5 8 
+
+
+6 1 4 
+2 0 3 
+7 5 8 
+
+
+6 0 4 
+2 1 3 
+7 5 8 
+
+
+0 6 4 
+2 1 3 
+7 5 8 
+
+
+2 6 4 
+0 1 3 
+7 5 8 
+
+
+2 6 4 
+1 0 3 
+7 5 8 
+
+
+2 0 4 
+1 6 3 
+7 5 8 
+
+
+2 4 0 
+1 6 3 
+7 5 8 
+
+
+2 4 3 
+1 6 0 
+7 5 8 
+
+
+2 4 3 
+1 0 6 
+7 5 8 
+
+
+2 0 3 
+1 4 6 
+7 5 8 
+
+
+0 2 3 
+1 4 6 
+7 5 8 
+
+
+1 2 3 
+0 4 6 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 35297 states
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 576, in <module>
+    agent.astar_search_using_number_of_misplaced_blocks()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 487, in astar_search_using_number_of_misplaced_blocks
+    children_states = self.child_generator_from_state(u_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 389, in child_generator_from_state
+    children_states = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 390, in <listcomp>
+    Grid_State(child_list) for child_list in children_list
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 52, in __init__
+    manhattan_distance_heuristic += absolute_value(i-actual_pos_of_number[0]) + absolute_value(j - actual_pos_of_number[1])
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 570, in <module>
+    puzzle = Sliding_Block_Grid(3)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in __init__
+    self.grid = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 129, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 129, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2new.py 
+6
+1
+4
+3
+8
+5
+2
+7
+0
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+Solution found
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+
+6 1 4 
+3 8 0 
+2 7 5 
+
+
+6 1 4 
+3 0 8 
+2 7 5 
+
+
+6 1 4 
+0 3 8 
+2 7 5 
+
+
+6 1 4 
+2 3 8 
+0 7 5 
+
+
+6 1 4 
+2 3 8 
+7 0 5 
+
+
+6 1 4 
+2 3 8 
+7 5 0 
+
+
+6 1 4 
+2 3 0 
+7 5 8 
+
+
+6 1 4 
+2 0 3 
+7 5 8 
+
+
+6 0 4 
+2 1 3 
+7 5 8 
+
+
+0 6 4 
+2 1 3 
+7 5 8 
+
+
+2 6 4 
+0 1 3 
+7 5 8 
+
+
+2 6 4 
+1 0 3 
+7 5 8 
+
+
+2 0 4 
+1 6 3 
+7 5 8 
+
+
+2 4 0 
+1 6 3 
+7 5 8 
+
+
+2 4 3 
+1 6 0 
+7 5 8 
+
+
+2 4 3 
+1 0 6 
+7 5 8 
+
+
+2 0 3 
+1 4 6 
+7 5 8 
+
+
+0 2 3 
+1 4 6 
+7 5 8 
+
+
+1 2 3 
+0 4 6 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 47952 states
+the average number of vertices explored is 250.32
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2new.py
+6
+1
+4
+3
+8
+5
+2
+7
+0
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+Solution found
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+
+6 1 4 
+3 8 0 
+2 7 5 
+
+
+6 1 4 
+3 0 8 
+2 7 5 
+
+
+6 1 4 
+0 3 8 
+2 7 5 
+
+
+6 1 4 
+2 3 8 
+0 7 5 
+
+
+6 1 4 
+2 3 8 
+7 0 5 
+
+
+6 1 4 
+2 3 8 
+7 5 0 
+
+
+6 1 4 
+2 3 0 
+7 5 8 
+
+
+6 1 4 
+2 0 3 
+7 5 8 
+
+
+6 0 4 
+2 1 3 
+7 5 8 
+
+
+0 6 4 
+2 1 3 
+7 5 8 
+
+
+2 6 4 
+0 1 3 
+7 5 8 
+
+
+2 6 4 
+1 0 3 
+7 5 8 
+
+
+2 0 4 
+1 6 3 
+7 5 8 
+
+
+2 4 0 
+1 6 3 
+7 5 8 
+
+
+2 4 3 
+1 6 0 
+7 5 8 
+
+
+2 4 3 
+1 0 6 
+7 5 8 
+
+
+2 0 3 
+1 4 6 
+7 5 8 
+
+
+0 2 3 
+1 4 6 
+7 5 8 
+
+
+1 2 3 
+0 4 6 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 47952 states
+the average number of vertices explored is 203.4
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py 
+6
+1
+4
+3
+8
+5
+2
+7
+0
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+Solution found
+
+6 1 4 
+3 8 5 
+2 7 0 
+
+
+6 1 4 
+3 8 0 
+2 7 5 
+
+
+6 1 4 
+3 0 8 
+2 7 5 
+
+
+6 1 4 
+0 3 8 
+2 7 5 
+
+
+6 1 4 
+2 3 8 
+0 7 5 
+
+
+6 1 4 
+2 3 8 
+7 0 5 
+
+
+6 1 4 
+2 3 8 
+7 5 0 
+
+
+6 1 4 
+2 3 0 
+7 5 8 
+
+
+6 1 4 
+2 0 3 
+7 5 8 
+
+
+6 0 4 
+2 1 3 
+7 5 8 
+
+
+0 6 4 
+2 1 3 
+7 5 8 
+
+
+2 6 4 
+0 1 3 
+7 5 8 
+
+
+2 6 4 
+1 0 3 
+7 5 8 
+
+
+2 0 4 
+1 6 3 
+7 5 8 
+
+
+2 4 0 
+1 6 3 
+7 5 8 
+
+
+2 4 3 
+1 6 0 
+7 5 8 
+
+
+2 4 3 
+1 0 6 
+7 5 8 
+
+
+2 0 3 
+1 4 6 
+7 5 8 
+
+
+0 2 3 
+1 4 6 
+7 5 8 
+
+
+1 2 3 
+0 4 6 
+7 5 8 
+
+
+1 2 3 
+4 0 6 
+7 5 8 
+
+
+1 2 3 
+4 5 6 
+7 0 8 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 35297 states
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 576, in <module>
+    agent.astar_search_using_number_of_misplaced_blocks()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 487, in astar_search_using_number_of_misplaced_blocks
+    children_states = self.child_generator_from_state(u_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 386, in child_generator_from_state
+    children_list = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 387, in <listcomp>
+    self.create_copy(grid) for _ in range(num_possible_actions)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 353, in create_copy
+    copy = [None for _ in range(self.length_of_puzzle)]
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 353, in <listcomp>
+    copy = [None for _ in range(self.length_of_puzzle)]
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py
+8
+6
+7
+2
+54
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 570, in <module>
+    puzzle = Sliding_Block_Grid(3)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in __init__
+    self.grid = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 129, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 129, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py
+8
+6
+7
+2
+5
+4
+3
+00
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 570, in <module>
+    puzzle = Sliding_Block_Grid(3)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 128, in __init__
+    self.grid = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 129, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 129, in <listcomp>
+    list([int(input()) for _ in range(m)]) for _ in range(m)
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % python3 q2.py
+8
+6
+7
+2
+5
+4
+3
+0
+1
+
+8 6 7 
+2 5 4 
+3 0 1 
+
+Solution found
+
+8 6 7 
+2 5 4 
+3 0 1 
+
+
+8 6 7 
+2 5 4 
+3 1 0 
+
+
+8 6 7 
+2 5 0 
+3 1 4 
+
+
+8 6 0 
+2 5 7 
+3 1 4 
+
+
+8 0 6 
+2 5 7 
+3 1 4 
+
+
+8 5 6 
+2 0 7 
+3 1 4 
+
+
+8 5 6 
+0 2 7 
+3 1 4 
+
+
+0 5 6 
+8 2 7 
+3 1 4 
+
+
+5 0 6 
+8 2 7 
+3 1 4 
+
+
+5 2 6 
+8 0 7 
+3 1 4 
+
+
+5 2 6 
+8 1 7 
+3 0 4 
+
+
+5 2 6 
+8 1 7 
+0 3 4 
+
+
+5 2 6 
+0 1 7 
+8 3 4 
+
+
+5 2 6 
+1 0 7 
+8 3 4 
+
+
+5 2 6 
+1 7 0 
+8 3 4 
+
+
+5 2 0 
+1 7 6 
+8 3 4 
+
+
+5 0 2 
+1 7 6 
+8 3 4 
+
+
+0 5 2 
+1 7 6 
+8 3 4 
+
+
+1 5 2 
+0 7 6 
+8 3 4 
+
+
+1 5 2 
+7 0 6 
+8 3 4 
+
+
+1 5 2 
+7 3 6 
+8 0 4 
+
+
+1 5 2 
+7 3 6 
+8 4 0 
+
+
+1 5 2 
+7 3 0 
+8 4 6 
+
+
+1 5 2 
+7 0 3 
+8 4 6 
+
+
+1 5 2 
+7 4 3 
+8 0 6 
+
+
+1 5 2 
+7 4 3 
+0 8 6 
+
+
+1 5 2 
+0 4 3 
+7 8 6 
+
+
+1 5 2 
+4 0 3 
+7 8 6 
+
+
+1 0 2 
+4 5 3 
+7 8 6 
+
+
+1 2 0 
+4 5 3 
+7 8 6 
+
+
+1 2 3 
+4 5 0 
+7 8 6 
+
+
+1 2 3 
+4 5 6 
+7 8 0 
+
+Astar search using total manhattan distance as heuristic explored 2861107 states
+^CTraceback (most recent call last):
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 576, in <module>
+    agent.astar_search_using_number_of_misplaced_blocks()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 487, in astar_search_using_number_of_misplaced_blocks
+    children_states = self.child_generator_from_state(u_state)
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 389, in child_generator_from_state
+    children_states = [
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 390, in <listcomp>
+    Grid_State(child_list) for child_list in children_list
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 59, in __init__
+    self.number_of_misplaced_blocks = self.compute_number_of_mispaced_tiles()
+  File "/Users/neerajkrishnan/Desktop/ASSIGNMENTS/SEMESTER 4/AI LAB/LAB 3/q2.py", line 83, in compute_number_of_mispaced_tiles
+    number += 1
+KeyboardInterrupt
+
+neerajkrishnan@NEERAJs-MacBook-Pro LAB 3 % 
