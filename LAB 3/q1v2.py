@@ -191,15 +191,34 @@ class Maze:
     if not input_puzzle:
       self.generate_maze()
     else:
+      adj_dictionary = dict()
+      puzzle = []
+      puzzle_str = ''
+      x = input()
+      while x!= '-1':
+        puzzle.append(x)
+        x = input()
+      
+      for ch in puzzle:
+        puzzle_str += ch
+      # print(puzzle_str)
+      adj_dictionary = eval(puzzle_str)
+
+
+      # print(adj_dictionary)
+
       for key in self.cell_dictionary.keys():
         cell = self.cell_dictionary[key]
         cell: Cell
-        print(f'Enter the list of neighbouring cells of cell as a list{cell.x,cell.y}')
-        adj_list_for_current_cell = eval(input())
+        # print(f'Enter the list of neighbouring cells of cell as a list{cell.x,cell.y}')
+        adj_list_for_current_cell = adj_dictionary[(cell.x,cell.y)]
+        # adj_list_for_current_cell = eval(input())
         adj_list_for_current_cell = list(adj_list_for_current_cell)
         for (x,y) in adj_list_for_current_cell:
           cell.non_walled_neighbours.append(x*m + y)
       
+
+      # for key in 
 
 
 
@@ -715,8 +734,8 @@ print(f'average number of vertices BFS explored: {bfs_explore/100}')
 print(f'average number of vertices A * explored: {astar_explore/100}')
 
 
-# maze = Maze(2,input_puzzle=True)
-# maze.print_maze()
+maze = Maze(5,input_puzzle=True)
+maze.print_maze()
 
 
 
