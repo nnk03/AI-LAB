@@ -175,7 +175,7 @@ class Cell:
 
 
 class Maze:
-  def __init__(self,m) -> None:
+  def __init__(self,m,input_puzzle = False) -> None:
     # maze side length
     self.sides = m
     # list of 'Cell' Objects
@@ -188,7 +188,21 @@ class Maze:
       self.cell_dictionary[f'cell_{cell.cell_number}'] = cell
     # self.created_maze = self.generate_maze()
     # we call generate_maze() function to generate a random maze
-    self.generate_maze()
+    if not input_puzzle:
+      self.generate_maze()
+    else:
+      for key in self.cell_dictionary.keys():
+        cell = self.cell_dictionary[key]
+        cell: Cell
+        print(f'Enter the list of neighbouring cells of cell as a list{cell.x,cell.y}')
+        adj_list_for_current_cell = eval(input())
+        adj_list_for_current_cell = list(adj_list_for_current_cell)
+        for (x,y) in adj_list_for_current_cell:
+          cell.non_walled_neighbours.append(x*m + y)
+      
+
+
+
     # maze_img is a list of list which is used to print the grid of maze
     self.maze_img = [
       list(['' for _ in range(2*m + 1)]) for _ in range(2*m + 1)
@@ -700,6 +714,9 @@ print(f'average number of vertices DFS explored: {dfs_explore/100}')
 print(f'average number of vertices BFS explored: {bfs_explore/100}')
 print(f'average number of vertices A * explored: {astar_explore/100}')
 
+
+# maze = Maze(2,input_puzzle=True)
+# maze.print_maze()
 
 
 
