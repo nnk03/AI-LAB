@@ -183,7 +183,6 @@ class Agent:
       print('You won')
     # self.max_depth_minimax = depth
     self.number_of_leaves_of_the_game_tree_explored_for_minimax = self.number_of_leaves_of_the_game_tree_explored
-  
   def start_game_alpha_beta(self):
     self.max_depth_alpha_beta = 0
 
@@ -630,4 +629,3 @@ alpha_beta_leaves = agent.number_of_leaves_of_the_game_tree_explored
 print(f'ALPHA BETA PRUNING searches {alpha_beta_leaves} leaves whereas MINIMAX searches {minimax_explored_leaves} leaves')
 
 print(f'Alpha Beta pruning is {minimax_explored_leaves/alpha_beta_leaves} times efficient than minimax')
-
